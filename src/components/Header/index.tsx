@@ -1,7 +1,13 @@
-import React from 'react'
+import { Container } from "./styles.ts"
+import img from "../../assets/Frame.svg"
+import { SearchBar } from "../SearchBar/index.tsx"
 
 export const Header = () => {
   return (
-    <div>Header</div>
+    <Container>
+      <img src={img} alt="" />
+
+      < SearchBar />
+    </Container>
   )
 }
