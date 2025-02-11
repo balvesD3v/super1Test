@@ -1,6 +1,6 @@
 import { FiMenu } from "react-icons/fi";
 import { CategoryList, DepartmentsButton, LeftSection, NavBar, RightSection } from "./styles";
-
+import img from "../../assets/Vector.svg"
 
 export const NavigationBar = () => {
   return (
@@ -12,9 +12,9 @@ export const NavigationBar = () => {
         </DepartmentsButton>
 
         <CategoryList>
-          <span>Descontos Cliente Unimed Natal</span>
-          <span>Carnaval 🎭 🎉</span>
-          <span>Semana do Gato 😺</span>
+          <span>
+            <img src={img} alt="" />Descontos Cliente Unimed Natal
+          </span>
         </CategoryList>
       </LeftSection>
 
