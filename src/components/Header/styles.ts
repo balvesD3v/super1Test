@@ -3,6 +3,12 @@ import { styled } from "styled-components"
 export const Container = styled.header`
   background-color: #eae0d5;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 122px;
+  gap: 50px;
+  width: 100%;
+  position: fixed;
 
   &::before {
     content: "";
@@ -15,3 +21,7 @@ export const Container = styled.header`
   }
 `
 
+export const ContainerButton = styled.div`
+  display: flex;
+  gap: 20px;
+`

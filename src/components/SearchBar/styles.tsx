@@ -9,7 +9,7 @@ export const SearchContainer = styled.div`
 
 export const SearchInput = styled.input`
   width: 100%;
-  padding: 12px 48px 12px 20px;
+  padding: 12px 20px 12px 20px;
   font-size: 16px;
   border: none;
   border-radius: 30px;
@@ -24,7 +24,7 @@ export const SearchInput = styled.input`
 
 export const SearchIcon = styled(FiSearch)`
   position: absolute;
-  right: 16px;
+  right: 1px;
   top: 50%;
   transform: translateY(-50%);
   color: #b0b0b0;
