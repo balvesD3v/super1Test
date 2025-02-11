@@ -16,7 +16,6 @@ export const Header = () => {
         <ButtonCircle icon={<FiUser size={22} color="#f47920" />} title="Faça login" subtitle="ou cadastre-se" />
         <ButtonCircle icon={<FiShoppingCart size={22} color="#f47920" />} />
       </ContainerButton>
-
     </Container>
   )
 }

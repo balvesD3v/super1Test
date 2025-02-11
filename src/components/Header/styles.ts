@@ -9,6 +9,9 @@ export const Container = styled.header`
   gap: 50px;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 
   &::before {
     content: "";
