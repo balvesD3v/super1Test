@@ -1,7 +1,10 @@
-import React from 'react'
+import { Container } from "./styles"
+import { Slider } from "../Slider"
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <Container>
+      <Slider />
+    </Container>
   )
 }
