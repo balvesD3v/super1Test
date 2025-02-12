@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { useRef } from "react";
 import { SliderContainer, CustomPrevButton, CustomNextButton } from "./styles";
+
 import img1 from "../../assets/banner 1.png";
 import img2 from "../../assets/banner 2.png";
 import arrowL from "../../assets/Vector Arrow Left.svg";
@@ -26,10 +27,10 @@ export const Slider = () => {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
         <SwiperSlide>
-          <img src={img1} alt="Banner 1" style={{ width: "100%", borderRadius: "8px" }} />
+          <img src={img1} alt="Banner 1" style={{ width: "100%" }} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img2} alt="Banner 2" style={{ width: "100%", borderRadius: "8px" }} />
+          <img src={img2} alt="Banner 2" style={{ width: "100%" }} />
         </SwiperSlide>
       </Swiper>
 

@@ -7,7 +7,6 @@ export const NavBar = styled.nav`
   width: 100%;
   height: 60px;
   background-color: #f7f2ec;
-  padding: 15px 15px;
   font-size: 16px;
   font-weight: 500;
   color: #333;

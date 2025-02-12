@@ -7,5 +7,5 @@ export const LayoutContainer = styled.div`
 `;
 
 export const ContentWrapper = styled.main`
-  margin-top: 240px; 
+  margin-top: 205px; 
 `;
