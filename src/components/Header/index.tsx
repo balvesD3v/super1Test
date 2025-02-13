@@ -1,4 +1,4 @@
-import img from "../../assets/Frame.svg"
+import img from "../../../public/assets/Frame.svg"
 import { FiMapPin, FiUser, FiShoppingCart } from "react-icons/fi";
 import { Container, ContainerButton } from "./styles.ts"
 import { SearchBar } from "../SearchBar/index.tsx"

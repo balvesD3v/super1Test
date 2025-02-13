@@ -1,6 +1,6 @@
 import { FiMenu } from "react-icons/fi";
 import { CategoryList, DepartmentsButton, LeftSection, NavBar, RightSection } from "./styles";
-import img from "../../assets/Vector.svg"
+import img from "../../../public/assets/Vector.svg"
 
 export const NavigationBar = () => {
   return (

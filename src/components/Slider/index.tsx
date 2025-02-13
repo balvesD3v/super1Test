@@ -3,10 +3,10 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { useRef } from "react";
 import { SliderContainer, CustomPrevButton, CustomNextButton } from "./styles";
 
-import img1 from "../../assets/banner 1.png";
-import img2 from "../../assets/banner 2.png";
-import arrowL from "../../assets/Vector Arrow Left.svg";
-import arrowR from "../../assets/Vector Arrow Right.svg";
+import img1 from "../../../public/../public/assets/banner 1.png";
+import img2 from "../../../public/assets/banner 2.png";
+import arrowL from "../../../public/assets/Vector Arrow Left.svg";
+import arrowR from "../../../public/assets/Vector Arrow Right.svg";
 
 import "swiper/css";
 import "swiper/css/navigation";
