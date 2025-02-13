@@ -1,16 +1,16 @@
 import { IconCircle } from "../IconCircle";
 import { Container } from "./styles";
 
-import book from "../../../public/assets/book.svg";
-import heart from "../../../public/assets/heart.svg";
-import shirt from "../../../public/assets/shirt.svg";
-import bb from "../../../public/assets/bb.svg";
-import couch from "../../../public/assets/couch.svg";
-import dumbell from "../../../public/assets/dumbell.svg";
-import microphone from "../../../public/assets/microphone.svg";
-import keys from "../../../public/assets/keys.svg";
-import glasses from "../../../public/assets/glasses.png";
-import services from "../../../public/assets/services.svg";
+import book from "/assets/book.svg";
+import heart from "/assets/heart.svg";
+import shirt from "/assets/shirt.svg";
+import bb from "/assets/bb.svg";
+import couch from "/assets/couch.svg";
+import dumbell from "/assets/dumbell.svg";
+import microphone from "/assets/microphone.svg";
+import keys from "/assets/keys.svg";
+import glasses from "/assets/glasses.png";
+import services from "/assets/services.svg";
 
 const iconsData = [
   { icon: book, description: "Arte, Papelaria e Armarinhos" },

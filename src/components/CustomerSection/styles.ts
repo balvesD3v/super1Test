@@ -19,6 +19,5 @@ export const Container = styled.div`
 `
 
 export const Products = styled.div`
-  background-color: red;
   margin-top: 30px;
 `
