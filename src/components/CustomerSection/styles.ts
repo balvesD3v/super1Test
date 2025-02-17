@@ -1,16 +1,15 @@
 import styled from "styled-components";
-const bgImage = "https://cdn.pixabay.com/photo/2025/02/13/14/09/14-09-35-57_960_720.png";
 
 export const Container = styled.div`
   width: 100%;
   max-width: 1100px;
   min-height: 200px; 
   background-size: cover;
-  background-image: url(${bgImage});
+  background-image: url("/assets/sessão cliente unimed natal (1).svg");
   background-position: center;
   margin: 0 auto 40px; 
   padding: 40px 50px;
-  background-color: green;
+  border-radius: 5px;
 
   .title {
     color: #fff;
@@ -21,7 +20,6 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     min-height: auto;
-    background-color: red;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
