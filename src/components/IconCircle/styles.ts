@@ -5,14 +5,18 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  cursor: pointer; 
+  cursor: pointer;
   width: 100px;
+
+  @media (max-width: 768px) {
+    width: 80px; 
+  }
 `;
 
 export const IconWrapper = styled.div`
   width: 96px;
   height: 96px;
-  background-color: #f8f2eb; 
+  background-color: #f8f2eb;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -26,10 +30,20 @@ export const IconWrapper = styled.div`
   }
 
   ${Container}:hover & {
-    background-color: #F47920; 
+    background-color: #F47920;
     
     img {
       filter: brightness(100) saturate(100%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 61px; 
+    height: 61px;
+
+    img {
+      width: 36px; 
+      height: 36px;
     }
   }
 `;
@@ -40,9 +54,13 @@ export const Text = styled.p`
   color: #444;
   text-align: center;
   transition: font-weight 0.3s ease-in-out;
-  white-space: pre-line; 
+  white-space: pre-line;
 
   ${Container}:hover & {
     font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px; 
   }
 `;
