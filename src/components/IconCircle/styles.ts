@@ -38,8 +38,8 @@ export const IconWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 61px; 
-    height: 61px;
+    width: 81px; 
+    height: 81px;
 
     img {
       width: 36px; 

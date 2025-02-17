@@ -66,29 +66,11 @@ export const SliderContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   position: relative;
-  height: 400px;
 
   &:hover {
     ${CustomPrevButton}, ${CustomNextButton} {
       opacity: 1;
       visibility: visible;
     }
-  }
-
-  @media (max-width: 768px) {
-    height: 250px; 
-
-    &:hover {
-      ${CustomPrevButton}, ${CustomNextButton} {
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
-  }
-
-  .slide-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
   }
 `;
