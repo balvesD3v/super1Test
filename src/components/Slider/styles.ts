@@ -73,4 +73,12 @@ export const SliderContainer = styled.div`
       visibility: visible;
     }
   }
+
+  @media (max-width: 768px) {
+    ${CustomPrevButton}, ${CustomNextButton} {
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none;
+    }
+  }
 `;
