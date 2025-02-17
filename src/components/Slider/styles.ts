@@ -71,7 +71,7 @@ export const SliderContainer = styled.div`
   &:hover {
     ${CustomPrevButton}, ${CustomNextButton} {
       opacity: 1;
-      visibility: hidden;
+      visibility: visible;
     }
   }
 

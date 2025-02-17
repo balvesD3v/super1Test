@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "swiper/css";
 
 export const Container = styled.div`
   display: flex;
@@ -7,22 +8,40 @@ export const Container = styled.div`
   overflow-x: auto;
 `;
 
-export const Card = styled.div`
+export const SwiperContainer = styled.div`
   width: 100%;
-  height: 370px;
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .swiper-slide {
+    flex-shrink: 0;
+    width: auto;
+  }
+`;
+
+export const Card = styled.div`
+  position: relative;
+  width: 250px; 
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
-  padding-bottom: 10px;
-  position: relative;
+  margin-top: 10px;
   transition: 0.3s;
   cursor: pointer;
 
   &:hover {
     transform: translateY(-5px);
     transition: 0.3s;
+  }
+
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 420px;
   }
 `;
 
@@ -36,20 +55,28 @@ export const Details = styled.div`
   padding: 0 12px;
   font-size: 14px;
   color: #333;
-  
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
 
   h3 {
     font-weight: normal;
     font-size: 16px;
     margin-bottom: 6px;
+    white-space: normal; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 `;
 
 export const Price = styled.div`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
   color: #3F3F3F;
   margin: 4px 0;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const Discount = styled.div`
@@ -75,23 +102,25 @@ export const InstallmentsAndPix = styled.div`
   display: flex;
   flex-direction: column;
 
-  .pix {
-    font-size: 14px;
-    color: #737373;
+  @media (max-width: 768px) {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
-
-  .info-text {
-    font-size: 14px;
-    color: #737373;
-  }
-`
+`;
 
 export const Seller = styled.p`
   position: absolute;
-  bottom: 0;
-
   font-size: 12px;
   color: #616161;
-  margin-top: 6px;
+  bottom: 0;
+  max-width: 100%;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 
-`
+  @media (max-width: 768px) {
+    font-size: 14px;
+    max-width: 90%; 
+  }
+`;
