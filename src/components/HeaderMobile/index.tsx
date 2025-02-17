@@ -1,7 +1,8 @@
 import img from "/assets/Frame.svg";
 import { FiMenu, FiShoppingCart } from "react-icons/fi";
 import { useState } from "react";
-import { Container, Logo, MenuButton, CartButton, Sidebar, Overlay } from "./styles.ts";
+import { Container, Logo, MenuButton, CartButton, Overlay } from "./styles.ts";
+import { DepartamentsListMobile } from "../DepartamentsMobileList/index.tsx";
 
 export const HeaderMobile = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
@@ -25,17 +26,8 @@ export const HeaderMobile = () => {
       </Container>
 
       {isSidebarOpen && <Overlay onClick={toggleSidebar} />}
-      <Sidebar className={isSidebarOpen ? "open" : ""}>
-        <button className="close-btn" onClick={toggleSidebar}>X</button>
-        <nav>
-          <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Minha Conta</a></li>
-            <li><a href="#">Meus Pedidos</a></li>
-          </ul>
-        </nav>
-      </Sidebar>
+      <DepartamentsListMobile isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+
     </>
   );
 };

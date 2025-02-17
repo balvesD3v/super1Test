@@ -77,6 +77,13 @@ export const SliderContainer = styled.div`
 
   @media (max-width: 768px) {
     height: 250px; 
+
+    &:hover {
+      ${CustomPrevButton}, ${CustomNextButton} {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
   }
 
   .slide-img {

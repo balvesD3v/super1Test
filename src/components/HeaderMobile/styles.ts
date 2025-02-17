@@ -43,7 +43,7 @@ export const Sidebar = styled.aside`
   left: 0;
   width: 75%;
   height: 100vh;
-  background: #fff;
+  background: #EEE6DD;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
@@ -59,9 +59,6 @@ export const Sidebar = styled.aside`
     border: none;
     font-size: 20px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
   }
 
   nav ul {
@@ -73,11 +70,14 @@ export const Sidebar = styled.aside`
     margin: 10px 0;
   }
 
-  nav ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #333;
-    font-weight: 500;
+  .titleAndButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-weight: bold;
+    }
   }
 `;
 
