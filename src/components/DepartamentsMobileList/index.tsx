@@ -4,16 +4,16 @@ import clode from "/assets/close.png";
 
 type DepartamentsListMobileProps = {
   isOpen: boolean;
-  toggleSidebar: () => void;
+  toggleDepartamentsList: () => void;
 };
 
-export const DepartamentsListMobile = ({ isOpen, toggleSidebar }: DepartamentsListMobileProps) => {
+export const DepartamentsListMobile = ({ isOpen, toggleDepartamentsList }: DepartamentsListMobileProps) => {
   return (
     <SidebarContainer className={isOpen ? "open" : ""}>
       <div className="sidebar">
         <div className="titleAndButton">
           <span className="title">Departamentos</span>
-          <button className="close-btn" onClick={toggleSidebar}>
+          <button className="close-btn" onClick={toggleDepartamentsList}>
             <img src={clode} alt="Fechar" />
           </button>
         </div>
