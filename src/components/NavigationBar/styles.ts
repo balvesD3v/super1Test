@@ -6,7 +6,7 @@ export const NavBar = styled.nav`
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #f7f2ec;
+  background-color: white;
   font-size: 16px;
   font-weight: 500;
   color: #333;
@@ -19,7 +19,20 @@ export const NavBar = styled.nav`
 export const LeftSection = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 122px;
+  margin-left: 350px;
+`;
+
+export const RightSection = styled.div`
+  display: flex;
+  align-items: center;
+  color: #737373;
+  font-family: "Source Sans 3", serif;
+  cursor: pointer;
+  margin-right: 350px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const DepartmentsButton = styled.button`
@@ -33,6 +46,7 @@ export const DepartmentsButton = styled.button`
   cursor: pointer;
   color: #333;
   position: relative;
+  margin-right: 10px;
 
   &:hover {
     opacity: 0.8;
@@ -141,19 +155,11 @@ export const CategoryList = styled.div`
     &:hover {
       text-decoration: underline;
     }
-  }
-`;
 
-export const RightSection = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: 125px;
-  color: #737373;
-  font-family: "Source Sans 3", serif;
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: underline;
+    &::before {
+      content: "";
+      border: 1px solid #EAE0D5;
+    }
   }
 `;
 

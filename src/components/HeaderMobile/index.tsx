@@ -6,7 +6,7 @@ import { DepartamentsListMobile } from "../DepartamentsMobileList/index.tsx";
 import { CartSidebar } from "../CartSidebar/index.tsx";
 import { ButtonCircle } from "../ButtonCircle/index.tsx";
 import { LoginSideBar } from "../LoginSidebar/index.tsx";
-import { Modal } from "../Modal"; // Importando o componente correto
+import { Modal } from "../Modal";
 
 export const HeaderMobile = () => {
   const [isDepartamentsListOpen, setIsDepartamentsListOpen] = useState<boolean>(false);

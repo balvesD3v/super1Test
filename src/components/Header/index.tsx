@@ -10,10 +10,20 @@ import { CartSidebar } from "../CartSidebar/index.tsx";
 
 export const Header = () => {
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
+  const [isCepModalOpen, setIsCepModalOpen] = useState<boolean>(false);
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 768);
 
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
+  };
+
+  const toggleCepModal = () => {
+    setIsCepModalOpen(!isCepModalOpen);
+  };
+
+  const toggleEmailModal = () => {
+    setIsEmailModalOpen(!isEmailModalOpen);
   };
 
   useEffect(() => {
@@ -37,8 +47,8 @@ export const Header = () => {
         <SearchBar />
 
         <ContainerButton>
-          <ButtonCircle icon={<FiMapPin size={22} color="#f47920" />} title="Onde" subtitle="você está?" />
-          <ButtonCircle icon={<FiUser size={22} color="#f47920" />} title="Faça login" subtitle="ou cadastre-se" />
+          <ButtonCircle icon={<FiMapPin size={22} color="#f47920" />} title="Onde" subtitle="você está?" onClick={toggleCepModal} />
+          <ButtonCircle icon={<FiUser size={22} color="#f47920" />} title="Faça login" subtitle="ou cadastre-se" onClick={toggleEmailModal} />
           <ButtonCircle icon={<FiShoppingCart size={22} color="#f47920" />} onClick={toggleCart} />
         </ContainerButton>
 

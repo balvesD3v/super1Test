@@ -6,7 +6,7 @@ export const Container = styled.div`
   left: 35%;
   transform: translateX(-50%) translateY(-10px);
   opacity: 0;
-  background: #EAE0D5;
+  background: #FAF7F4;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 16px;
@@ -35,7 +35,7 @@ export const Container = styled.div`
     transform: translateX(-50%);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #EAE0D5;
+    border-bottom: 10px solid #FAF7F4;
   }
 
   .modal-content {
