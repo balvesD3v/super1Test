@@ -1,19 +1,18 @@
 import img from "/assets/Frame.svg";
 import { FiMapPin, FiMenu, FiShoppingCart, FiUser } from "react-icons/fi";
 import { useState } from "react";
-import { Container, Logo, MenuButton, CartButton, Overlay, Location, LocationModal } from "./styles.ts";
+import { Container, Logo, MenuButton, CartButton, Overlay, Location } from "./styles.ts";
 import { DepartamentsListMobile } from "../DepartamentsMobileList/index.tsx";
 import { CartSidebar } from "../CartSidebar/index.tsx";
 import { ButtonCircle } from "../ButtonCircle/index.tsx";
 import { LoginSideBar } from "../LoginSidebar/index.tsx";
-import { InputWithButton } from "../InputWithButton/index.tsx";
+import { Modal } from "../Modal"; // Importando o componente correto
 
 export const HeaderMobile = () => {
   const [isDepartamentsListOpen, setIsDepartamentsListOpen] = useState<boolean>(false);
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
   const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
   const [isLocationOpen, setIsLocationOpen] = useState<boolean>(false);
-  const [showModal, setShowModal] = useState<boolean>(false);
 
   const toggleDepartamentsList = () => {
     setIsDepartamentsListOpen(!isDepartamentsListOpen);
@@ -28,13 +27,7 @@ export const HeaderMobile = () => {
   };
 
   const toggleLocation = () => {
-    if (!isLocationOpen) {
-      setShowModal(true);
-      setTimeout(() => setIsLocationOpen(true), 10);
-    } else {
-      setIsLocationOpen(false);
-      setTimeout(() => setShowModal(false), 300);
-    }
+    setIsLocationOpen((prev) => !prev);
   };
 
   return (
@@ -59,11 +52,8 @@ export const HeaderMobile = () => {
         </span>
       </Location>
 
-      {showModal && (
-        <LocationModal className={isLocationOpen ? "open" : "closed"}>
-          <InputWithButton />
-        </LocationModal>
-      )}
+      <Modal isOpen={isLocationOpen} onClose={toggleLocation} />
+
       {isDepartamentsListOpen && <Overlay onClick={toggleDepartamentsList} />}
       <DepartamentsListMobile isOpen={isDepartamentsListOpen} toggleDepartamentsList={toggleDepartamentsList} />
 
