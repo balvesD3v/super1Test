@@ -5,15 +5,6 @@ export const Container = styled.div`
   flex-wrap: nowrap;
   gap: 16px;
   overflow-x: auto;
-
-  &::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  &::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 4px;
-  }
 `;
 
 export const Card = styled.div`
@@ -27,6 +18,7 @@ export const Card = styled.div`
   padding-bottom: 10px;
   position: relative;
   transition: 0.3s;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-5px);
@@ -99,7 +91,7 @@ export const Seller = styled.p`
   bottom: 0;
 
   font-size: 12px;
-  color: #666;
+  color: #616161;
   margin-top: 6px;
 
 `
