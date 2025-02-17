@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { products } from "../../api/products";
 import { Card, Price, Container, SwiperContainer, Image, Details, Discount, InstallmentsAndPix, Seller } from "./styles";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import 'swiper/swiper-bundle.css';
 
 export const ProductCard = () => {
   const [isMobile, setIsMobile] = useState(false);

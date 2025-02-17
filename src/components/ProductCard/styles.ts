@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "swiper/css";
+import 'swiper/swiper-bundle.css';
 
 export const Container = styled.div`
   display: flex;

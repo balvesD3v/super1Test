@@ -1,4 +1,4 @@
-import "swiper/css";
+import 'swiper/swiper-bundle.css';
 
 import { IconCircle } from "../IconCircle";
 import { Container, SwiperContainer } from "./styles";
