@@ -9,6 +9,6 @@ export const ContentWrapper = styled.main`
   margin-top: 205px;
 
   @media (max-width: 768px) {
-    margin-top: 50px; 
+    margin-top: 10px; 
   }
 `;
