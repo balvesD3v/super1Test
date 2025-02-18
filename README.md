@@ -46,11 +46,10 @@ Este projeto foi desenvolvido como parte do **teste da Super1**, com o objetivo 
 
 ---
 # 📷 Demonstração
-Adicione um GIF ou prints do projeto funcionando aqui
-
+![Demonstração do Projeto](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGJ3ejB2NngyeW42anV0cml1dTZpdjJ2ejlyMmp2cGFvMXBjZGE2cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ct3mBNGwFxEXxcGpSy/giphy.gif)
 
 ---
-## 🚀 **Como Usar**
+## 🚀 **Como Rodar**
 ### 1️⃣ **Clone o repositório a partir do template**
 ```sh
 git clone https://github.com/balvesD3v/super1Test
@@ -65,5 +64,7 @@ npm install
 npm dev
 ```
 
-## 📜 Licença
-Este projeto é distribuído sob a licença **MIT**.
+---
+# 🎯 Agradecimento
+Agradeço pela oportunidade de participar deste teste e desenvolver este projeto.  
+Se tiverem qualquer feedback ou sugestões, estou à disposição.
