@@ -7,7 +7,7 @@ export const Container = styled.header`
   align-items: center;
   height: 122px;
   gap: 50px;
-  width: 100vw; /* Garante que ocupe a tela toda */
+  width: 100vw; 
   position: fixed;
   top: 0;
   left: 0;
