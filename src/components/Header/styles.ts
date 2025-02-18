@@ -7,7 +7,7 @@ export const Container = styled.header`
   align-items: center;
   height: 122px;
   gap: 50px;
-  width: 100%;
+  width: 100vw; /* Garante que ocupe a tela toda */
   position: fixed;
   top: 0;
   left: 0;
@@ -19,10 +19,10 @@ export const Container = styled.header`
     top: 0;
     left: 0;
     width: 100%;
-    height: 8px; 
-    background-color: #ff8000; 
+    height: 8px;
+    background-color: #ff8000;
   }
-`
+`;
 
 export const ContainerButton = styled.div`
   display: flex;

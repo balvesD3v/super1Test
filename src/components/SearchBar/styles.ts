@@ -11,6 +11,7 @@ export const SearchInput = styled.input`
   width: 100%;
   padding: 12px 20px 12px 20px;
   font-size: 16px;
+  height: 30px;
   border: none;
   border-radius: 30px;
   background-color: #fff;
@@ -24,7 +25,7 @@ export const SearchInput = styled.input`
 
 export const SearchIcon = styled(FiSearch)`
   position: absolute;
-  right: 1px;
+  right: -15px;
   top: 50%;
   transform: translateY(-50%);
   color: #b0b0b0;

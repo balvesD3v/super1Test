@@ -40,22 +40,20 @@ export const Header = () => {
   }
 
   return (
-    <>
-      <Container>
-        <img src={img} alt="Logo" className="img" />
+    <Container>
+      <img src={img} alt="Logo" className="img" />
 
-        <SearchBar />
+      <SearchBar />
 
-        <ContainerButton>
-          <ButtonCircle icon={<FiMapPin size={22} color="#f47920" />} title="Onde" subtitle="você está?" onClick={toggleCepModal} />
-          <ButtonCircle icon={<FiUser size={22} color="#f47920" />} title="Faça login" subtitle="ou cadastre-se" onClick={toggleEmailModal} />
-          <ButtonCircle icon={<FiShoppingCart size={22} color="#f47920" />} onClick={toggleCart} />
-        </ContainerButton>
+      <ContainerButton>
+        <ButtonCircle icon={<FiMapPin size={22} color="#f47920" />} title="Onde" subtitle="você está?" onClick={toggleCepModal} />
+        <ButtonCircle icon={<FiUser size={22} color="#f47920" />} title="Faça login" subtitle="ou cadastre-se" onClick={toggleEmailModal} />
+        <ButtonCircle icon={<FiShoppingCart size={22} color="#f47920" />} onClick={toggleCart} />
+      </ContainerButton>
 
-        <NavigationBar />
-      </Container>
-
+      <NavigationBar />
       <CartSidebar isOpen={isCartOpen} toggleSidebar={toggleCart} />
-    </>
+    </Container>
+
   );
 };
